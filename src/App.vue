@@ -1,32 +1,49 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
 
-<style lang="scss">
+<style lang="css">
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import "assets/normalize.css";
+@import "assets/layout.css";
+@import "assets/snackbar.css";
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  font-family: 'Poppins','Open Sans', Helvetica, Arial, sans-serif;
 }
 
-#nav {
-  padding: 30px;
+html, body {
+  background: #050507;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  height: 100%;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+#app {
+  margin: 0 50px;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+*,:after,:before {
+    box-sizing: border-box
+}
+
+:focus {
+    outline: 0
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+h1,h2,h3,h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400
 }
 </style>
